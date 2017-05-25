@@ -37,9 +37,8 @@ cacheSolve <- function(x, ...) {
     return(i)
   }
   
-  data <- x$get() # getting the matrix values
-  #i <- mean(data, ...) # inversion 
-  i <- solve(data, ...)
+  data <- x$get() # getting the matrix values 
+  i <- solve(data, ...) # inversion
   x$setinverse(i)
   i
 }
